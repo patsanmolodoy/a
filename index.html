@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <h1>Счетчик салфеток</h1>
+  <div class="table">
+    <div class="row">
+      <div class="col">
+        <h2 class="title">Выданные салфетки <span class="napkins">0</span> шт</h2>
+      </div>
+      <div class="col">
+        <h2 class="title">Ты заработал
+          <span class="money">0</span>
+          ₽
+        </h2>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn minus" type="button">-1 салфетка</button>
+      <button class="btn plus" type="button">+1 салфетка</button>
+    </div>
+  </div>
+  <button class="theme btn" type="button">
+    <span class="material-symbols-outlined icon">
+      dark_mode
+    </span>
+  </button>
+  <div class="popup" id="auth">
+    <div class="popup-content">
+      <form class="form">
+        <label class="label">
+          <input type="text" class="input" placeholder=" " required>
+          <span class="form-text">
+            Введите имя
+          </span>
+        </label>
+        <button type="submit" class="btn form-btn">
+          Продолжить
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="popup popup-welcome" id="welcome">
+    <div class="popup-content">
+      <h2 class="popup-title">
+        Добро пожаловать <span class="popup-name">Имя</span>
+      </h2>
+    </div>
+  </div>
+  <script type="module" src="./scripts/script.js"></script>
+</body>
+
+</html>
